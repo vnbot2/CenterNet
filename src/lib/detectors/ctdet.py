@@ -89,4 +89,7 @@ class CtdetDetector(BaseDetector):
       for bbox in results[j]:
         if bbox[4] > self.opt.vis_thresh:
           debugger.add_coco_bbox(bbox[:4], j - 1, bbox[4], img_id='ctdet')
-    debugger.show_all_imgs(pause=self.pause)
+    import ipdb; ipdb.set_trace()
+    
+    #debugger.show_all_imgs(pause=self.pause)
+    

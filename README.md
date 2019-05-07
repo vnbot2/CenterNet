@@ -52,11 +52,18 @@ Detection identifies objects as axis-aligned boxes in an image. Most successful 
 All models and details are available in our [Model zoo](readme/MODEL_ZOO.md).
 
 ## Installation
-
-Please refer to [INSTALL.md](readme/INSTALL.md) for installation instructions.
-
+### Docker
+git@github.com:vnbot2/CenterNet.git
 ## Use CenterNet
 
+```
+    cd /path/to/centernet/
+    docker run --name centernet -it -p $2:$2 \
+        -v `pwd`:/data/   \
+        --rm \
+        I /bin/zsh
+```
+  
 We support demo for image/ image folder, video, and webcam. 
 
 First, download the models (By default, [ctdet_coco_dla_2x](https://drive.google.com/open?id=1pl_-ael8wERdUREEnaIfqOV_VF2bEVRT) for detection and 
